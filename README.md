@@ -34,11 +34,12 @@ As it is this kind of HTML
 If on the browser
 
 ```html
-<script src="//unpkg.com/query-parent-element/dist/query-parent-element.js"></script>
+<script src="//unpkg.com/query-parent-element/dist/query-parent-element.umd.js"></script>
 ```
 
 
 ```ts
+// if es
 import queryParentElement from 'query-parent-element';
 
 // (child: string | HTMLElement, parent: string | HTMLElement) => HTMLElement | undefined;
