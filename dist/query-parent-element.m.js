@@ -1,0 +1,2 @@
+const e=e=>{if("string"==typeof e){const t=document.querySelector(e);if(null===t)return;return t}return e};export default(t,r)=>{const n=e(t);if(void 0===n)return;const o=e(r);if(void 0===o)return;let u=n.parentNode;for(;null!==u&&"HTML"!==u.tagName;){const e=u.parentElement;if(null===e)return u;if(e.isEqualNode(o)){u=e;break}u=u.parentElement}return u||void 0};
+//# sourceMappingURL=query-parent-element.m.js.map
