@@ -9,7 +9,7 @@
   "source": "src/query-parent-element.ts",
   "scripts": {
     "prepare": "yarn build",
-    "build": "microbundle -i src/query-parent-element.ts --name getDescendant",
+    "build": "microbundle -i src/query-parent-element.ts --name queryParentElement",
     "test": "jest",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
