@@ -1,6 +1,6 @@
 {
   "name": "query-parent-element",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Get aim parent element",
   "types": "dist/query-parent-element.d.ts",
   "main": "dist/query-parent-element.js",
