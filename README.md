@@ -21,14 +21,20 @@ yarn add [-D] query-parent-element
 As it is this kind of HTML
 
 ```html
-<div id="expected">
+<div id="parent">
   <div>
     <div>
-      <div id="el">
+      <div id="child">
       </div>
     </div>
   </div>
 </div>
+```
+
+If on the browser
+
+```html
+<script src="//unpkg.com/query-parent-element/dist/query-parent-element.js"></script>
 ```
 
 
@@ -37,11 +43,11 @@ import queryParentElement from 'query-parent-element';
 
 // (child: string | HTMLElement, parent: string | HTMLElement) => HTMLElement | undefined;
 const result = queryParentElement(
-  document.getElementById('own') /* or '#id' */,
-  document.getElementById('target') /* or '#target' */
+  document.getElementById('child') /* or '#child' */,
+  document.getElementById('parent') /* or '#parent' */
 );
 
 if (result !== undefined) {
-  console.log(result); // <div id="target"/>
+  console.log(result); // <div id="parent"/>
 }
 ```
